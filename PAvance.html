@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-4.6.1-dist/css/bootstrap.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="_fuentes_/_fuentes_.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="_js_/jquery-3.6.0.min.js"></script>
+    <title>V-Learn</title>
+</head>
+<div class="ClsContenedorMenu">
+  <nav style="max-width: 1140px; margin: 0 auto;" class="navbar navbar-expand-lg navbar-dark ClsColor1 fuenteMon d-flex align-items-center">
+
+      <a class="navbar-brand p-0 m-0 ClsTLogo" href="#"><img src="img/IMGPI1.png" class="d-inline-block align-top ClsLogoMenu img-fluid"></a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav ml-auto my-3 my-lg-0 navbar-nav-scroll">
+
+          <li id="Admin" class="nav-item active mr-3 d-flex align-items-center">
+            <a class="nav-link ClsBoMenu p-2" style="color: #fff;" href="#">Administración <span class="flecha abajo"></span></a>
+          </li>
+
+          <li id="Acad" class="nav-item active mr-3 d-flex align-items-center">
+            <a class="nav-link ClsBoMenu p-2" style="color: #fff;" href="#">Académico <span class="flecha abajo"></span></a>
+          </li>
+
+
+          <li class="nav-item  mr-1 p-0">
+            <a class="nav-link mostraN d-flex align-items-center" href="#">
+              <img width="50" height="50" src="img/IMGPI2.png" class="ClsLogoMenu">
+              <div id="Noti"><strong>Notificaciones</strong></div>
+              <span class="ml-2" id="Notificaciones"><strong>Notificaciones</strong></span>
+            </a>
+          </li>
+
+
+          <li class="nav-item dropdown mr-1 p-0">
+            <a class="nav-link d-flex align-items-center" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              <img width="50" height="50" src="img/IMGPI3.png" class="ClsLogoMenu">
+              <span class="ml-2" id="Perfil"><strong>Perfil</strong></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-right ClsColor2 ClsColorL" aria-labelledby="navbarScrollingDropdown">
+              <li class="d-flex pr-3 pl-3 ClsTLP align-items-center"><img width="100" height="100" src="img/Menuico9.png"><p class="p-2"><strong>Rocio Morales López</strong> <br> Credencial:1028 <br> Especialidad:AEADE</p></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico10.png">Ver perfil</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico11.png"> Configuración</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico12.png"> Ayuda</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown  mr-1 p-0">
+            <a class="nav-link d-flex align-items-center" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              <img  width="50" height="50" src="img/IMGPI4.png" class="ClsLogoMenu ClsQuitar">
+            </a>
+            <ul class="dropdown-menu dropdown-menuV dropdown-menu-right ClsColor2" aria-labelledby="navbarScrollingDropdown">
+              <li id="menuL" class="d-flex ClsColorL pl-2"><p id="menuL">Menú</p></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="PAvance.html"><img class="p-1" width="40" height="40" src="img/Menuico1.png">Avance</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico2.png">Clases</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico3.png">Prácticas</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico4.png">Test</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico5.png">Examen Final</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico6.png">Taller Integral</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico7.png">Clases en vivo</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li class="d-flex"><a class="dropdown-item ClsColorL ClsMenuP" href="#"><img class="p-1" width="40" height="40" src="img/Menuico8.png">Cerrar sesión</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+
+    </nav>
+  </div>
+<body>
+  <div class="ClsContenedorAva p-0">
+    <div class="ClsPimg">
+      <img class="t100" src="img/imgA/sec4.png">
+    </div>
+  </div>
+
+    <main id="fullpage">
+      <div class="section" id="section0">
+        <div style="height: 100%;" class="ClsContendor2 ClsColorN fuenteMon d-flex justify-content-center align-items-center">
+
+        <div class="p-0 bd-highlight position-relative ClsEspaImg">
+            <img style="width: 100%; height: 100%;" src="img/imgA/imgSec1.jpeg">
+            <div class="position-absolute ClsColor3 ClsColorB" style="width: 100%; text-align: center; font-size: 140%; font-weight: bolder; top: 0;">Materia Actual:</div>
+            <div class="ClsAdorno"></div>
+            <div class="ClsAdorno2"></div>
+        </div>
+
+        <div class="p-0 bd-highlight align-self-start position-relative ClsEspaAva">
+          <div class="ClsAdorno3"></div>
+          <div class="ClsAdorno4"></div>
+            <div class="ClsColor4 ClsColorB" style="width: 100%; text-align: center; font-size: 140%; font-weight: bolder;">Internet y Tecnología Online</div>
+
+            <div class="mt-3" style="text-align: center;"><p class="ClsColorT">Avance de Materia 30%</p>
+                <div class="t50" style="margin: 0 auto;"><div class="progress">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                </div></div>
+            </div><br />
+
+            <div class="container t94">
+            <div class="row">
+
+              <div class="col-6 col-md-4 p-2"><p class="text-center ClsColorT2">CLASES</p><div class="ClsCirPanAvance">
+                <img class="img-fluid" src="img/imgA/ImgAM1.jpg">
+                <div class="ClsCirPanAvancePor d-flex flex-column justify-content-center align-items-center">
+                  <div style="text-align: center;" class="p-1 bd-highlight"><img class="t50" src="img/imgA/Menuico2.png"></div>
+                  <div class="p-0 bd-highlight ClsPor">30%</div>
+                </div>
+              </div></div>
+
+              <div class="col-6 col-md-4 p-2"><p class="text-center ClsColorT2">PRÁCTICAS</p><div class="ClsCirPanAvance">
+                <img class="img-fluid" src="img/imgA/ImgAM2.jpg">
+                <div class="ClsCirPanAvancePor d-flex flex-column justify-content-center align-items-center">
+                  <div style="text-align: center;" class="p-1 bd-highlight"><img class="t50" src="img/imgA/Menuico3.png"></div>
+                  <div class="p-0 bd-highlight ClsPor">20%</div>
+                </div>
+              </div></div>
+
+              <div class="col-6 col-md-4 p-2"><p class="text-center ClsColorT2">TEST</p><div class="ClsCirPanAvance">
+                <img class="img-fluid" src="img/imgA/ImgAM3.jpeg">
+                <div class="ClsCirPanAvancePor d-flex flex-column justify-content-center align-items-center">
+                  <div style="text-align: center;" class="p-1 bd-highlight"><img class="t50" src="img/imgA/Menuico4.png"></div>
+                  <div class="p-0 bd-highlight ClsPor">20%</div>
+                </div>
+              </div></div>
+
+              <div class="col-6 col-md-4 p-2"><p class="text-center ClsColorT2">TALLER</p><div class="ClsCirPanAvance">
+                <img class="img-fluid" src="img/imgA/ImgAM4.jpg">
+                <div class="ClsCirPanAvancePor d-flex flex-column justify-content-center align-items-center">
+                  <div style="text-align: center;" class="p-1 bd-highlight"><img class="t50" src="img/imgA/Menuico5.png"></div>
+                  <div class="p-0 bd-highlight ClsPor">30%</div>
+                </div>
+              </div></div>
+
+              <div class="col-6 col-md-4 p-2"><p class="text-center ClsColorT2">CLASES EN VIVO</p><div class="ClsCirPanAvance">
+                <img class="img-fluid" src="img/imgA/ImgAM5.jpg">
+                <div class="ClsCirPanAvancePor d-flex flex-column justify-content-center align-items-center">
+                  <div style="text-align: center;" class="p-1 bd-highlight"><img class="t50" src="img/imgA/Menuico6.png"></div>
+                  <div class="p-0 bd-highlight ClsPor">20%</div>
+                </div>
+              </div></div>
+
+              <div class="col-6 col-md-4 p-2"><p class="text-center ClsColorT2">EXAMEN FINAL</p><div class="ClsCirPanAvance">
+                <img class="img-fluid" src="img/imgA/ImgAM6.jpg">
+                <div class="ClsCirPanAvancePor d-flex flex-column justify-content-center align-items-center">
+                  <div style="text-align: center;" class="p-1 bd-highlight"><img class="t50" src="img/imgA/Menuico7.png"></div>
+                  <div class="p-0 bd-highlight ClsPor">0%</div>
+                </div>
+              </div></div></div>
+
+            </div>
+
+
+           
+
+        </div>
+
+    </div>
+
+  </div>
+
+
+
+
+  <div class="section" id="section1">
+
+    <div style="height: 100%;" class="ClsContendor2 ClsColorN fuenteMon d-flex justify-content-center align-items-center position-relative">
+
+      <div class="position-absolute ClsColorT3">Conoce tu Retícula de Materias:</div>
+
+      <div class="p-0 bd-highlight position-relative ClsEspaImg">
+          <img style="width: 100%; height: 100%;" src="img/imgA/imgSec2.jpeg">
+          <div class="ClsAdorno"></div>
+          <div class="ClsAdorno2"></div>
+      </div>
+
+      <div class="p-0 bd-highlight align-self-start position-relative d-flex flex-column align-items-center justify-content-center ClsEspaAva">
+
+        <div class="ClsAdorno3"></div>
+        <div class="ClsAdorno4"></div>
+        <br /><br /><br />
+        <p class="ClsColorT4">Nivel MOS (Materias Comunes)</p>
+
+        <div class="container t93">
+          <div class="row">
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsAct"><img class="img-fluid ClsBordeA" src="img/imgA/Mimg1.png"></div>
+              <p class="text-center ClsColorT2">1. Internet y Tecnología Online</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsAct"><img class="img-fluid ClsBordeA" src="img/imgA/Mimg2.png"></div>
+              <p class="text-center ClsColorT2">2. Creación de Documentos Profesionales</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsAct"><img class="img-fluid ClsBordeA" src="img/imgA/Mimg3.png"></div>
+              <p class="text-center ClsColorT2">3. Presentaciones de Alto Impacto</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsAct"><img class="img-fluid ClsBordeA" src="img/imgA/Mimg4.png"></div>
+              <p class="text-center ClsColorT2">4. Hoja de Cálculo Electronica</p>
+            </div>
+        
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsAct"><img class="img-fluid ClsBordeA" src="img/imgA/Mimg5.png"></div>
+              <p class="text-center ClsColorT2">5. Ensamble de computadoras y Mantenimiento</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsInac"><img class="img-fluid ClsBordeD" src="img/imgA/Mimg6.png"></div>
+              <p class="text-center ClsColorT2">6. Animación Básica</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsInac"><img class="img-fluid ClsBordeD" src="img/imgA/Mimg7.png"></div>
+              <p class="text-center ClsColorT2">7. Introducción a Bases de Datos</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsInac"><img class="img-fluid ClsBordeD" src="img/imgA/Mimg8.png"></div>
+              <p class="text-center ClsColorT2">8. Diseño y dibujo digital</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsInac"><img class="img-fluid ClsBordeD" src="img/imgA/Mimg9.png"></div>
+              <p class="text-center ClsColorT2">9. Edición de Imágenes Digitales</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div class="ClsCirPanMateria ClsInac"><img class="img-fluid ClsBordeD" src="img/imgA/Mimg10.png"></div>
+              <p class="text-center ClsColorT2">10. Community Manager-Social Media</p>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div style="opacity: 0;"><div class="ClsCirPanMateria"></div>
+              <p class="text-center ClsColorT2">1. Internet y Tecnología Online</p>
+              </div>
+            </div>
+
+            <div class="col-4 col-md-3">
+              <div style="opacity: 0; ">
+              <div class="ClsCirPanMateria"></div>
+              <p class="text-center ClsColorT2">1. Internet y Tecnología Online</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+<div class="section" id="section2">
+
+  <div style="height: 100%;" class="ClsContendor2 ClsColorN fuenteMon d-flex justify-content-center align-items-center position-relative">
+
+    <div class="position-absolute ClsColorT3"></div>
+
+    <div class="p-0 bd-highlight position-relative ClsEspaImg">
+        <img style="width: 100%; height: 100%;" src="img/imgA/imgSec3.jpeg">
+        <div class="ClsAdorno"></div>
+        <div class="ClsAdorno2"></div>
+    </div>
+
+    <div class="p-0 bd-highlight align-self-start position-relative d-flex flex-column align-items-center justify-content-center ClsEspaAva">
+
+      <div class="ClsAdorno3"></div>
+      <div class="ClsAdorno4"></div>
+      <br />
+
+      <p class="ClsColorT5">Nivel Formativo</p>
+      <p class="ClsColorT6">Asistente Ejecutivo en Alta Dirección de Empresas</p>
+
+     
+      <div class="container t93">
+        <div class="row">
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg1.png"></div>
+            <p class="text-center ClsColorT2">1. Desarrollo Personal</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg2.png"></div>
+            <p class="text-center ClsColorT2">2. Comunicación Escrita</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg3.png"></div>
+            <p class="text-center ClsColorT2">3. Laboratorio de Digitación</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg4.png"></div>
+            <p class="text-center ClsColorT2">4. Taller de Lectura</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg5.png"></div>
+            <p class="text-center ClsColorT2">8. Informática Administrativa</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg6.png"></div>
+            <p class="text-center ClsColorT2">7. Documentos Mercantiles y Archivo</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg7.png"></div>
+            <p class="text-center ClsColorT2">6. Administración Estratégica</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg8.png"></div>
+            <p class="text-center ClsColorT2">5. Redacción de Documentos Ejecutivos</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg9.png"></div>
+            <p class="text-center ClsColorT2">9. Administración del Personal</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg10.png"></div>
+            <p class="text-center ClsColorT2">10. Contabilidad Básica</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg11.png"></div>
+            <p class="text-center ClsColorT2">11. Administración Eficaz del Tiempo</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg12.png"></div>
+            <p class="text-center ClsColorT2">12. Productividad Tecnológica</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg13.png"></div>
+            <p class="text-center ClsColorT2">16. Lideres Emprendedores</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg14.png"></div>
+            <p class="text-center ClsColorT2">15. Organización de Eventos Empresariales</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg15.png"></div>
+            <p class="text-center ClsColorT2">14. Calidad en el Servicio</p>
+          </div>
+
+          <div class="col-4 col-md-3">
+            <div class="ClsCirPanEspecialidad ClsInac"><img class="img-fluid" src="img/imgA/imgE/Eimg16.png"></div>
+            <p class="text-center ClsColorT2">13. Asistencia de Alta Dirección</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="fixed-bottom">
+  <div class="ClsContendor2 ClsColorB ClsColor1 fuenteCar d-flex justify-content-center align-items-center ClsTLetra">
+    <div style="width: 45%; text-align: center;" class="bd-highlight"><strong><em>Copyright © INSTITUTO DE COMPUINGLES DE ORIENTE Todos los derechos reservados.</em></strong></div>
+    <div style="width: 3.5%;" class="bd-highlight ClsLogoMenu"><img class="img-fluid" src="img/copy7.png"></div>
+    <div style="width: 7%;" class="bd-highlight"><strong>DICCIONARIO</strong></div>
+    <div style="width: 20%;" class="bd-highlight"><input class="buscar" type="search" placeholder="Buscar"></div>
+    <div style="width: 4%;" class="bd-highlight ClsLogoMenu"><img class="img-fluid" src="img/copy1.png" alt=""></div>
+    <div style="width: 4%;" class="bd-highlight ClsLogoMenu"><img class="img-fluid" src="img/copy2.png" alt=""></div>
+    <div style="width: 4%;" class="bd-highlight ClsLogoMenu"><img class="img-fluid" src="img/copy3.png" alt=""></div>
+    <div style="width: 4%;" class="bd-highlight ClsLogoMenu"><img class="img-fluid" src="img/copy4.png" alt=""></div>
+    <div style="width: 4%;" class="bd-highlight ClsLogoMenu"><img class="img-fluid" src="img/copy5.png" alt=""></div>
+    <div style="width: 4%;" class="bd-highlight ClsLogoMenu"><img class="img-fluid" src="img/copy6.png" alt=""></div>
+  </div>
+</div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.js"></script>
+
+
+
+<script>
+     
+     function myFunction(x) {
+     if (x.matches) {
+      new fullpage('#fullpage', {
+   //options here
+     autoScrolling:true,
+     scrollHorizontally: true,
+     scrollBar: true,
+     scrollingSpeed: 700,
+     responsiveWidth: 0,
+     responsiveHeight: 0,
+     paddingTop: '5.15rem',
+     
+     anchors: ['firstPage', 'secondPage', '3rdPage'],
+     });
+     }else{
+      new fullpage('#fullpage', {
+   //options here
+     autoScrolling:true,
+     scrollHorizontally: true,
+     scrollBar: true,
+     scrollingSpeed: 700,
+     responsiveWidth: 0,
+     responsiveHeight: 0,
+     paddingTop: '10.15rem',
+     paddingButtom: '10.15rem',
+     anchors: ['firstPage', 'secondPage', '3rdPage'],
+     });
+     }
+    }
+
+    var x = window.matchMedia("(max-width: 500px)");
+    myFunction(x) 
+    x.addListener(myFunction)
+
+
+    
+</script>
+
+    <script>
+
+       function pausarvideo()
+        {
+            var i, tabcontent;
+            tabcontent = document.getElementsByClassName("ClsVideo");
+            for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].pause();
+            }
+        }
+
+        var slider = document.getElementById("carouselExampleIndicators");
+        var vid1 = document.getElementById("video1");
+        var vid2 = document.getElementById("video2");
+
+        function Play1()
+        {
+          video1.style.display="block";
+          slider.style.display="none";
+          video1.play();
+        }
+
+        function Play2()
+        {
+          video2.style.display="block";
+          slider.style.display="none";
+          video2.play();
+        }
+
+        function Pause1()
+        {
+          slider.style.display="block";
+          video1.style.display="none";
+        }
+
+        function Pause2()
+        {
+          slider.style.display="block";
+          video2.style.display="none";
+        }
+
+        $(document).ready(function(){
+
+        $('.circulo2').click(function(){
+            $('body, html').animate({
+                scrollTop: '0px'
+            }, 1000);
+        });
+        });
+    </script>
+</body>
+</html>

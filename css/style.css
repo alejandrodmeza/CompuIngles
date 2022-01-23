@@ -1,0 +1,452 @@
+*{box-sizing: border-box}
+body
+{
+    font-size: 12pt;
+}
+
+p{margin: 0; padding: 0;}
+
+.fuenteMon{font-family:'Montserrat';}
+.fuenteCar{font-family:'Carlito';}
+
+.ClsContenedorMenu
+{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #fff;
+    position: fixed;
+    margin: 0 auto;
+    background: #030035;    
+    padding: 0;
+}
+
+.ClsContenedorAva
+{
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    color: #fff;
+    position: fixed;
+    margin: 0 auto;
+    padding: 0;    
+}
+
+
+
+.ClsMenuP
+{
+    font-weight: bold;
+    font-size: 90%;
+}
+
+.ClsMenuP:hover
+{
+    background-color: #DD5E00;
+    color: #fff;
+}
+
+.ClsLogoMenu:hover
+{
+    transform: scale(1.1, 1.1);
+}
+
+
+.ClsNor
+{
+    display: none;
+    background-color: #DD5E00;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 80%;
+    font-weight: bold;
+}
+
+.ClsColorL{color: #fff;}
+
+.ClsBoMenu {
+    color: #fff; /* color de fuente */
+    padding: 1rem ;
+    border-radius: 0.2rem; /* redondear bordes */
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.ClsBoMenu:hover {
+    color: #fff; /* color de fuente hover */
+}
+
+.ClsBoMenu::after {
+    content: "";
+    background: #0063CB; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 1rem;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 100%;
+    bottom: -100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.ClsBoMenu:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.ClsContendor
+{
+    text-rendering: optimizeLegibility;
+    padding:0;
+    max-width:1140px;
+    margin:0 auto;
+    height: 100%;
+    margin-top: 5.15rem;
+    font-size: 120%;
+    box-shadow:0px 0px 5px #777;
+    text-align:center;
+}
+
+.ClsContendor2
+{
+    text-rendering: optimizeLegibility;
+    max-width:1140px;
+    margin:0 auto;
+    font-size: 110%;
+    box-shadow:0px 0px 5px #777;
+    background-color: #fff;
+    text-align: left;
+    font-weight: bold;
+}
+
+.ClsContendor2 ul
+{
+    padding: 0;
+}
+
+.ClsPreP1
+{
+  margin:0;
+  padding:0;
+  max-width:1150px;
+  font-size: 200%;
+  color: #fff;
+  margin:0 auto;
+  box-shadow:0px 0px 5px #777;
+  background-color: #060136;
+  text-align: center;
+}
+
+.ClsImgFondo
+{
+    background-image: url("../img/IMGPI10.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.ClsImgFondo2
+{
+    background-image: url("../img/IMGPI26.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.ClsImgFondo3
+{
+    background-image: url("../img/IMGPI27.png");
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.ClsColorB{color: #fff;}
+.ClsColorN{color: #000;}
+
+.ClsT
+{
+  color:#F19001;
+  font-weight: bolder;
+  font-size: 200%;
+  text-align: left;
+}
+
+.ClsT2
+{
+  color:#fff;
+  font-weight: bolder;
+  font-size: 200%;
+  text-align: right;
+}
+
+.flecha {
+    border: solid white;
+    border-width: 0 0.2rem 0.2rem 0;
+    display: inline-block;
+    padding: 2px;
+}
+
+.abajo {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+#correo{background-image: url("../img/btncopy.jpg");	background-position: 0 0;       width: 35px; height: 35px; border-radius: 50%; cursor: pointer;}
+#whatsapp{background-image: url("../img/btncopy.jpg");	background-position: 70px 0;    width: 35px; height: 35px; border-radius: 50%; cursor: pointer;}
+#facebook{background-image: url("../img/btncopy.jpg");	background-position: 35px 0;    width: 35px; height: 35px; border-radius: 50%; cursor: pointer;}
+#instagram{background-image: url("../img/btncopy.jpg");	background-position: 0 35px;    width: 35px; height: 35px; border-radius: 50%; cursor: pointer;}
+#youtube{background-image: url("../img/btncopy.jpg");	background-position: 70px 35px; width: 35px; height: 35px; border-radius: 50%; cursor: pointer;}
+#ayuda{background-image: url("../img/btncopy.jpg");	background-position: 35px 35px;     width: 35px; height: 35px; border-radius: 50%; cursor: pointer;}
+
+.mostraN{position: relative;}
+
+.mostraN:hover #Noti
+{
+    display: block;
+}
+
+#Noti{
+    display: none;
+    background-color: #DD5E00;
+    padding: 0.1rem 0.8rem;
+    border-radius: 5rem;
+    font-size: 85%;
+    position: absolute;
+    bottom: -2.2rem;
+    left: -2.5rem;
+    margin: auto;
+}
+
+#Noti::before{
+    content: " ";
+    background-color: #DD5E00;
+    width: 0.8rem;
+    height: 0.8rem;
+    transform: rotate(45deg);
+    position: absolute;
+    top: -0.4rem;
+    right: 45%;
+    margin: auto;
+}
+
+.ClsTLetra{font-size: 80%;}
+
+input.buscar
+{
+  background: url("../img/copy8.png") no-repeat scroll 0.1em 0.1em/10%;
+  background-color: #fff;
+  width: 100%;
+  height: 2.1em;
+  border-radius: 4em;
+  padding-left: 2em;
+}
+
+input.buscar:focus
+{
+  transform: scale(1.2, 1.2);
+}
+
+.ClsColor1{background-color: #030035;}
+.ClsColor2{background-color: #FF7915;}
+.ClsColor3{background-color: #00ACDB;}
+.ClsColor4{background-color: #0067E6;}
+
+#Perfil{display: none;}
+#Menu{display: none;}
+#Notificaciones{display: none;}
+
+.t0{display: none;}
+.t8{width: 8%; height: auto;}
+.t10{width: 10%; height: auto;}
+.t20{width: 20%; height: auto;}
+.t25{width: 25%; height: auto;}
+.t30{width: 30%; height: auto;}
+.t40{width: 40%; height: auto;}
+.t50{width: 50%; height: auto;}
+.t60{width: 60%; height: auto;}
+.t70{width: 70%; height: auto;}
+.t80{width: 80%; height: auto;}
+.t90{width: 90%; height: auto;}
+.t93{width: 93%; height: auto;}
+.t94{width: 94%; height: auto;}
+.t100{width: 100%; height: auto;}
+
+.ClsTLogo{width: 30%; height: auto;}
+
+
+.ClsCirPanAvance
+{
+    height: 11rem;
+    width: 11rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ClsCirPanAvance img{border-radius: 100%;}
+
+.ClsCirPanAvancePor
+{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+    background-color: #fff;
+    position: absolute;
+    bottom: -5%;
+    left: -10%;
+    margin: auto;
+}
+
+.ClsCirPanAvancePor img{border-radius: 0%; margin: 0 auto;}
+
+.ClsCirPanMateria
+{
+    height: 7rem;
+    width: 7rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.ClsCirPanMateria img{border-radius: 100%;}
+
+.ClsBordeA {border-radius: 100%;}
+.ClsBordeD {border-radius: 100%;}
+
+.ClsCirPanEspecialidad
+{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 100%;
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.ClsColorT{color: #0067E6; font-weight: bold; font-size: 120%;}
+
+.ClsColorT2{color: #060136; font-weight:bolder; font-size: 75%;}
+
+.ClsColorT4{font-family: 'Carlito'; color: #0067E6; font-size: 210%; text-align: center;}
+
+.ClsColorT5{font-family: 'Carlito'; color: #0067E6; font-size: 190%; text-align: center; padding: 0;}
+
+.ClsColorT6{font-family: 'Carlito'; color: #0067E6; font-size: 150%; text-align: center; padding: 0;}
+
+.ClsColorT3{
+    z-index: 1;
+    position: absolute;
+    color: #fff;
+    font-weight: bolder;
+    font-size: 150%;
+    background-color: #060136;
+    width: 100%;
+    text-align: center;
+    padding: 0.5rem 0;
+    top: 0;
+
+}
+
+.ClsCirT
+{
+    border: none; background-color: transparent;
+}
+
+.ClsAct {cursor: pointer; border: 0.3rem #1B8D1A solid; border-radius: 100%;}
+
+
+
+.ClsInac {cursor:auto; border: 0.3rem #BE1422 solid; opacity: 80%; border-radius: 100%;}
+
+.ClsInac::before{  position: absolute; content: url("../img/imgA/bloquear.png"); width: 5rem; height: 5rem; top: 22%; left: 33%; z-index: 1;}
+
+
+.ClsAdorno{width: 1rem; height: 20rem; position: absolute; top: 0; right: 0; background-color: #00ACDB; border-radius: 5rem;}
+
+.ClsAdorno2{width: 1rem; height: 15rem; position: absolute; top: 40%; right: 5%; background-color: #0062EB; border-radius: 5rem;}
+
+.ClsAdorno3{width: 1rem; height: 5rem; position: absolute; top: 55%; left: 1%; background-color: #00ACDB; border-radius: 5rem;}
+
+.ClsAdorno4{width: 1rem; height: 8rem; position: absolute; top: 0%; left: 0%; background-color: #0062EB; border-radius: 5rem;}
+
+.ClsPor{color: #0067E6; font-size: 150%; padding: 0; margin: 0;}
+
+.ClsEspaImg{width: 45%; height: 100%;}
+.ClsEspaAva{width: 55%; height: auto;}
+
+.ClsPimg{max-width: 1140px; margin: 0 auto; margin-top: 5.15rem;}
+
+@media screen and (max-width: 995px)
+{
+    .ClsContendor{margin-top: 3.9rem;}
+}
+
+@media screen and (max-width: 850px)
+{
+    body{font-size: 10pt;}
+    .ClsContendor{margin-top: 3.5rem;}
+    #Perfil{display: block; font-size: 110%;}
+    #Notificaciones{display: block; font-size: 110%;}
+    #Menu{display: block; font-size: 110%;}
+    .mostraN:hover #Noti{display: none;}
+    .ClsPreP1{font-size: 150%;}
+    .ClsT{font-size: 150%;}
+    .ClsT2{font-size: 150%;}
+    .ClsContendor2{font-size: 100%;}
+    .ClsMenuP{font-size: 80%;}
+    .ClsTLogo{width: 35%; height: auto;}
+    .ClsTLetra{font-size: 65%;}
+}
+
+@media screen and (max-width: 500px)
+{
+    body{font-size: 6.5pt;}
+    .ClsContendor{margin-top: 3.6rem;}
+    #Perfil{display: block; font-size: 100%;}
+    #Notificaciones{display: block; font-size: 100%;}
+    #Menu{display: block; font-size: 100%;}
+    .mostraN:hover #Noti{display: none;}
+    .ClsPreP1{font-size: 150%;}
+    .ClsT{font-size: 150%;}
+    .ClsT2{font-size: 150%;}
+    .ClsContendor2{font-size: 100%;}
+    .ClsMenuP{font-size: 80%;}
+    .ClsTLogo{width: 50%; height: auto;}
+    .ClsTLetra{font-size: 50%;}
+    input.buscar{background: url("../img/copy8.png") no-repeat scroll 0.1em 0.1em/10%; background-color: #fff;}
+    .ClsCirPanAvance{height: 7.5rem; width: 7.5rem;}
+    .ClsCirPanAvancePor{height: 4rem;width: 4rem;}
+    .ClsCirPanMateria{height: 5rem;width: 5rem;}
+    .ClsCirPanEspecialidad{height: 4rem;width: 4rem;}
+    .ClsEspaImg{display: none;}
+    .ClsEspaAva{width: 100%; height: auto;}
+    .t94{width: 75%; height: auto;}
+    .ClsPimg{margin-top: 3.55rem;}
+    #menuL{display: none;}
+    .ClsContenedorMenu{font-size: 100%;}
+    .ClsMenuP{font-size: 70%;}
+    .ClsTLP{font-size: 90%;}
+    .dropdown-menuV{display: block;}
+    .ClsBoMenu{display: none;}
+    .ClsQuitar{display: none;}
+}
+
+
+@media screen and (max-width: 400px)
+{
+    .ClsTLetra{font-size: 47%;}    
+    .ClsColorT2{color: #060136; font-weight:bolder; font-size: 90%;}
+    #Admin{display: none;}
+    #Acad{display: none;}
+    .ClsBoMenu{display: none;}
+}
